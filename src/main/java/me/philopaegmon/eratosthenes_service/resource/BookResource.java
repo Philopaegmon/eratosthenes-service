@@ -2,6 +2,7 @@ package me.philopaegmon.eratosthenes_service.resource;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -47,5 +48,11 @@ public class BookResource {
     public Uni<RestResponse<BookDto>> updateBook(@PathParam(value = "id") Long id, UpdateBookDto updateBookDto) {
         return bookService.updateBook(id, updateBookDto)
             .map(RestResponse::ok);
+    }
+
+    @DELETE
+    @Path("/{id}")
+    public Uni<Void> deleteBook(@PathParam(value = "id") Long id) {
+        return bookService.deleteById(id);
     }
 }

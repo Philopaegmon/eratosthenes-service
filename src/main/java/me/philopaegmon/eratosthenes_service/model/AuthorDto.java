@@ -5,19 +5,23 @@ import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class BookDto {
-    private String name;
-    private Set<AuthorDto> authors;
+public class AuthorDto {
+    private String firstName;
+    private String lastName;
+    private Set<BookDto> books;
+
 
     @Data
+    @NoArgsConstructor
     @AllArgsConstructor
     @Builder(toBuilder = true)
-    public static class AuthorDto {
-        private String firstName;
-        private String lastName;
+    public static class BookDto {
+        private String name;
     }
 }

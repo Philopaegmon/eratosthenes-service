@@ -1,5 +1,8 @@
 package me.philopaegmon.eratosthenes_service.model;
 
+import java.time.LocalDate;
+import java.util.Set;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,4 +14,9 @@ import lombok.NoArgsConstructor;
 @Builder(toBuilder = true)
 public class UpdateBookDto {
     private String name;
+    private String isbn;
+    private Set<Long> authorIds;
+    private Set<Long> literaryGenresIds;
+    private Long languageId;
+    private LocalDate publicationDate;
 }

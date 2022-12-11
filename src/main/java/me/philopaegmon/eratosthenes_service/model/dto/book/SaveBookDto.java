@@ -1,4 +1,4 @@
-package me.philopaegmon.eratosthenes_service.model;
+package me.philopaegmon.eratosthenes_service.model.dto.book;
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class UpdateBookDto {
+public class SaveBookDto {
     private String name;
     private String isbn;
     private Set<Long> authorIds;

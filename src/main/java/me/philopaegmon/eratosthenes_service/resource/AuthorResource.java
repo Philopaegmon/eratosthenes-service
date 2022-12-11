@@ -12,9 +12,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import io.smallrye.mutiny.Uni;
-import me.philopaegmon.eratosthenes_service.model.AuthorDto;
-import me.philopaegmon.eratosthenes_service.model.CreateAuthorDto;
-import me.philopaegmon.eratosthenes_service.model.UpdateAuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.AuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.CreateAuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.UpdateAuthorDto;
 import me.philopaegmon.eratosthenes_service.service.AuthorService;
 
 @Path("/authors")

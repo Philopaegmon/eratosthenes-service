@@ -1,4 +1,4 @@
-package me.philopaegmon.eratosthenes_service.model;
+package me.philopaegmon.eratosthenes_service.model.dto.author;
 
 import java.util.Set;
 

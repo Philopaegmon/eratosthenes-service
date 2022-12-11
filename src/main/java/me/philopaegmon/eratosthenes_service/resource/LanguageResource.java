@@ -9,7 +9,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import io.smallrye.mutiny.Uni;
-import me.philopaegmon.eratosthenes_service.model.LanguageEntryDto;
+import me.philopaegmon.eratosthenes_service.model.dto.LanguageEntryDto;
 import me.philopaegmon.eratosthenes_service.service.LanguageService;
 
 @Path("/languages")

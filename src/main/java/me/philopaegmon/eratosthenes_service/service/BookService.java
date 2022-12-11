@@ -7,9 +7,9 @@ import javax.inject.Inject;
 
 import io.smallrye.mutiny.Uni;
 import me.philopaegmon.eratosthenes_service.mapper.BookMapper;
-import me.philopaegmon.eratosthenes_service.model.BookDto;
-import me.philopaegmon.eratosthenes_service.model.SaveBookDto;
-import me.philopaegmon.eratosthenes_service.model.UpdateBookDto;
+import me.philopaegmon.eratosthenes_service.model.dto.book.BookDto;
+import me.philopaegmon.eratosthenes_service.model.dto.book.SaveBookDto;
+import me.philopaegmon.eratosthenes_service.model.dto.book.UpdateBookDto;
 import me.philopaegmon.eratosthenes_service.persistence.AuthorRepository;
 import me.philopaegmon.eratosthenes_service.persistence.BookRepository;
 import me.philopaegmon.eratosthenes_service.persistence.LanguageRepository;
@@ -30,7 +30,7 @@ public class BookService {
     BookMapper bookMapper;
 
     public Uni<BookDto> getBookById(Long id) {
-        return bookRepository.findById(id)
+        return bookRepository.findBookById(id)
             .map(bookMapper::toBookDto);
     }
 

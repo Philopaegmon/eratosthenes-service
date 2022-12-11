@@ -5,9 +5,9 @@ import javax.inject.Inject;
 
 import io.smallrye.mutiny.Uni;
 import me.philopaegmon.eratosthenes_service.mapper.AuthorMapper;
-import me.philopaegmon.eratosthenes_service.model.AuthorDto;
-import me.philopaegmon.eratosthenes_service.model.CreateAuthorDto;
-import me.philopaegmon.eratosthenes_service.model.UpdateAuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.AuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.CreateAuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.UpdateAuthorDto;
 import me.philopaegmon.eratosthenes_service.persistence.AuthorRepository;
 
 @ApplicationScoped

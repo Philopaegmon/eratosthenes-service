@@ -7,7 +7,7 @@ import javax.inject.Inject;
 
 import io.smallrye.mutiny.Uni;
 import me.philopaegmon.eratosthenes_service.mapper.LanguageMapper;
-import me.philopaegmon.eratosthenes_service.model.LanguageEntryDto;
+import me.philopaegmon.eratosthenes_service.model.dto.LanguageEntryDto;
 import me.philopaegmon.eratosthenes_service.persistence.LanguageRepository;
 
 @ApplicationScoped

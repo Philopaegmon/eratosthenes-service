@@ -14,9 +14,9 @@ import javax.ws.rs.core.MediaType;
 import org.jboss.resteasy.reactive.RestResponse;
 
 import io.smallrye.mutiny.Uni;
-import me.philopaegmon.eratosthenes_service.model.BookDto;
-import me.philopaegmon.eratosthenes_service.model.SaveBookDto;
-import me.philopaegmon.eratosthenes_service.model.UpdateBookDto;
+import me.philopaegmon.eratosthenes_service.model.dto.book.BookDto;
+import me.philopaegmon.eratosthenes_service.model.dto.book.SaveBookDto;
+import me.philopaegmon.eratosthenes_service.model.dto.book.UpdateBookDto;
 import me.philopaegmon.eratosthenes_service.service.BookService;
 
 @Path("/books")

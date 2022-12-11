@@ -18,7 +18,11 @@
 				"vscjava.vscode-java-pack",
 				"redhat.vscode-quarkus",
 				"sonarsource.sonarlint-vscode",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"shengchen.vscode-checkstyle",
+				"redhat.fabric8-analytics",
+				"eamodio.gitlens",
+				"vscjava.vscode-lombok"
 			]
 		}
 	},

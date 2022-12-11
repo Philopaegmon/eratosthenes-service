@@ -15,4 +15,8 @@ public class LiteraryGenreRepository implements PanacheRepository<LiteraryGenre>
     public Uni<List<LiteraryGenre>> findLiteraryGenresByIds(Set<Long> literaryGenreIds) {
         return find("#LiteraryGenre.getByIds", Parameters.with("ids", literaryGenreIds)).list();
     }
+
+    public Uni<List<LiteraryGenre>> getLiteraryGenres() {
+        return listAll();
+    }
 }

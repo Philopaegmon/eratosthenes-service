@@ -13,10 +13,10 @@ import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 
 import me.philopaegmon.eratosthenes_service.model.Author;
-import me.philopaegmon.eratosthenes_service.model.AuthorDto;
 import me.philopaegmon.eratosthenes_service.model.Book;
-import me.philopaegmon.eratosthenes_service.model.CreateAuthorDto;
-import me.philopaegmon.eratosthenes_service.model.UpdateAuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.AuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.CreateAuthorDto;
+import me.philopaegmon.eratosthenes_service.model.dto.author.UpdateAuthorDto;
 
 @Mapper(
     componentModel = "cdi",

@@ -1,4 +1,4 @@
-package me.philopaegmon.eratosthenes_service.model;
+package me.philopaegmon.eratosthenes_service.model.dto.author;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class UpdateAuthorDto {
+public class CreateAuthorDto {
     private String firstName;
     private String lastName;
 }

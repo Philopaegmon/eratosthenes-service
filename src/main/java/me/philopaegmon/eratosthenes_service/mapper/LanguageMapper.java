@@ -5,7 +5,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 import me.philopaegmon.eratosthenes_service.model.Language;
-import me.philopaegmon.eratosthenes_service.model.LanguageEntryDto;
+import me.philopaegmon.eratosthenes_service.model.dto.LanguageEntryDto;
 
 @Mapper(
     componentModel = "cdi",
